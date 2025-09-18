@@ -21,9 +21,11 @@
         <tbody>
             <tr>
                 <td>{{ restaurant.name }}</td>
-                <td>{{ restaurant.picture }}</td>
                 <td>{{ restaurant.cuisine }}</td>
                 <td>{{ restaurant.rating }}/5</td>
+                <td>
+                    <a href="{% url 'open_update_restaurant' restaurant.id %}">Update Restaurant</a>
+                </td>
             </tr>
         </tbody>
     </table>

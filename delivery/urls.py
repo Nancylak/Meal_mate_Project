@@ -16,5 +16,8 @@ urlpatterns = [
     path('add_restaurant/', views.add_restaurant,name ='add_restaurant'),
     path('add_restaurant/open_update_restaurant/<int:restaurant_id>', views.open_update_restaurant,name ='open_update_restaurant'),
     path('update_restaurant/<int:restaurant_id>',views.update_restaurant,name="update_restaurant"),
-    
+    path('add_restaurant/open_update_restaurant/'
+    '<int:restaurant_id>', 
+         views.open_update_restaurant,
+         name ='open_update_restaurant'),
 ]
