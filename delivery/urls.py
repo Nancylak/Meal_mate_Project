@@ -10,14 +10,6 @@ urlpatterns = [
     path('signup/', views.signup, name ='signup'),
     path('signin/', views.signin, name ='signin'),
     path('signin/open_add_restaurant/', views.open_add_restaurant,
-          name ='open_add_restaurant'),
-    path('open_show_restaurant/', views.open_show_restaurant,
-          name ='open_show_restaurant'),      
-    path('add_restaurant/', views.add_restaurant,name ='add_restaurant'),
-    path('add_restaurant/open_update_restaurant/<int:restaurant_id>', views.open_update_restaurant,name ='open_update_restaurant'),
-    path('update_restaurant/<int:restaurant_id>',views.update_restaurant,name="update_restaurant"),
-    path('add_restaurant/open_update_restaurant/'
-    '<int:restaurant_id>', 
-         views.open_update_restaurant,
-         name ='open_update_restaurant'),
+          name='open_add_restaurant'),
+    path('add_restaurant/', views.add_restaurant, name='add_restaurant'),     
 ]
