@@ -192,14 +192,14 @@ def checkout(request, username):
     # order = client.order.create(data=order_data)
 
     # Pass the order details to the frontend
-    return render(request, 'delivery/checkout.html', {
-        'username': username,
-        'cart_items': cart_items,
-        'total_price': total_price,
-        'razorpay_key_id': settings.RAZORPAY_KEY_ID,
-        'order_id': order['id'],  # Razorpay order ID
-        'amount': total_price,
-    })
+    # return render(request, 'delivery/checkout.html', {
+    #     'username': username,
+    #     'cart_items': cart_items,
+    #     'total_price': total_price,
+    #     'razorpay_key_id': settings.RAZORPAY_KEY_ID,
+    #     'order_id': order['id'],  # Razorpay order ID
+    #     'amount': total_price,
+    # })
 
 
 # Orders Page
